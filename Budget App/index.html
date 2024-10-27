@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Management App</title>
+    <link rel="stylesheet" href="Styles/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Budget App</h1>
+                <div class="nav-toggle" id="navToggle">&#9776;</div>
+                <ul class="nav-links" id="navLinks">
+                    <li style="text-decoration: underline; "><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 style="color:blue">Take Control of Your Finances</h1>
+                <p>Our budget management app helps you track your spending and save more effectively.</p>
+                <a href="referral.html" class="btn-get-started">Get Started</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Budget App. All rights reserved.<br> Developed By:Daksh Hiral Shah</p>
+    </footer>
+    <script>
+        // JavaScript for handling the mobile menu toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1B263B;
+    padding: 20px;
+    text-align: center;
+}
+
+.cal-btn{
+    height: 40px;
+    background-color: cyan;
+    border: none;
+    border-radius: 10px;
+}
+
+.cal-btn:hover{
+    opacity: 0.7;
+}
+
+h1 {
+    color: #E0E1DD;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+a.btn {
+    background-color: #415A77;
+    color: #E0E1DD;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #1F4E78;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    border-bottom: 1px solid #415A77;
+    text-align: center;
+}
+
+h2 {
+    color: #E0E1DD;
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #A9B4C2;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    section {
+        text-align: left;
+        padding: 70px 40px;
+    }
+
+    p {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        gap: 30px;
+    }
+
+    a.btn {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+/* Car Option Sections */
+.car-option {
+    background-color: #1B263B;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.car-option h3 {
+    color: #E0E1DD;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.loan-form, .savings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    color: #A9B4C2;
+}
+
+.input-field {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #415A77;
+    color: #E0E1DD;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .car-option {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .loan-form, .savings-form {
+        max-width: 300px;
+    }
+
+    .car-option h3 {
+        text-align: left;
+    }
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #A9B4C2;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #415A77;
+    color: #E0E1DD;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #415A77;
+    color: #E0E1DD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1F4E78;
+}
+
+.output {
+    margin-top: 30px;
+}
+
+#planOutput {
+    color: #A9B4C2;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    input, .btn {
+        font-size: 18px;
+    }
+}

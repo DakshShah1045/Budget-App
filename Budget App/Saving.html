@@ -1,0 +1,116 @@
+<!-- 20:4:10 ratio> <debt>
+	saving : 20% of total saving if time is given and down payment.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Page</title>
+    <link rel="stylesheet" href="Styles/saving.css">
+</head>
+<body>
+    <header>
+        <h1>Savings Goals</h1>
+        <nav>
+            <a href="#car-section" class="btn">Want to buy a car</a>
+            <a href="#home-section" class="btn">Want to buy a home</a>
+            
+            <a href="#other-section" class="btn">Other</a>
+            <a href="main.html" class="btn">Home</a>
+        </nav>
+    </header>
+
+    <!-- Car Section -->
+    <section id="car-section">
+        <h2>Want to Buy a Car</h2>
+        <p>This section helps you plan and save for a car. Set your savings goal and track progress.</p>
+        <!-- Loan Section -->
+<div class="car-option loan">
+    <h3>On Loan</h3>
+    <br>
+ 
+    <form class="loan-form">
+        <label for="loan-price">Price of Car ($):</label>
+        <input type="number" id="loan-price" class="input-field loan-cost" placeholder="Enter car price">
+
+        <label for="fixed-income">Fixed Income per Month ($):</label>
+        <input type="number" id="fixed-income" class="input-field income" placeholder="Enter your income">
+
+         <label for="fixed-income">Rate Of Interest on Loan (%):</label>
+        <input type="number" id="fixed-income" class="input-field loanRate" placeholder="Enter your Rate Of interest ">
+
+        <label for="fixed-income">Loan for Years:</label>
+        <input type="number" id="fixed-income" class="input-field loanTime" placeholder="Enter Time For Loan  ">
+
+        <label for="fixed-income">Down Payment:</label>
+        <input type="number" id="fixed-income" class="input-field downPayment" placeholder="Enter Down Payment  ">
+
+<br>
+            <button class="cal-btn loan-btn">Calculate</button>
+    </form>
+
+</div>
+<p class="loanDescription"></p>
+<!-- Savings Section -->
+<div class="car-option savings">
+    <h3>By Savings</h3>
+    <form class="savings-form">
+        <label for="savings-price">Cost of Car ($):</label>
+        <input type="number" id="savings-price" class="input-field save-cost" placeholder="Enter car cost">
+
+        <label for="time-years">Time to Save (Years):</label>
+        <input type="number" id="time-years" class="input-field year-save" placeholder="Enter years to save">
+
+        <label for="time-years">Down Payment:</label>
+        <input type="number" id="time-years" class="input-field save-down" placeholder="Enter years to save">
+<br>
+        <button class="cal-btn save">Calculate</button>
+    </form>
+</div>
+<p class="save-des"></p>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home-section">
+        <h2>Want to Buy a Home</h2>
+        <p>This section guides you through the steps to save for a home. Start by setting your target and timeline.</p><br>
+        <a href="house.html" class="btn" target="_blank">Click Here</a>
+    </section>
+
+    <!-- Vacation Section -->
+
+
+    <!-- Other Section -->
+    <section id="other-section">
+        <h2>Other Savings Goals</h2>
+        <p>Have other savings goals? Use this section to manage and track your custom goals.</p>
+        <br>
+<form id="planForm">
+            <div class="input-group">
+                <label for="goal">Savings Goal</label>
+                <input type="text" id="goal" placeholder="E.g., Buy a Car" required>
+            </div>
+            <div class="input-group">
+                <label for="monthlyIncome">Monthly Income ($)</label>
+                <input type="number" id="monthlyIncome" placeholder="Enter your monthly income" required>
+            </div>
+            <div class="input-group">
+                <label for="targetAmount">Target Amount ($)</label>
+                <input type="number" id="targetAmount" placeholder="Enter your savings goal amount" required>
+            </div>
+            <div class="input-group">
+                <label for="years">Time to Save (Years)</label>
+                <input type="number" id="years" placeholder="Enter number of years" required>
+            </div>
+            <button type="submit" class="btn">Generate Plan</button>
+        </form>
+
+        <div class="output">
+            <h3>Your Savings Plan:</h3>
+            <p id="planOutput"></p>
+        </div>
+    </section>
+<script src="Scripts/saving.js"></script>
+</body>
+</html>

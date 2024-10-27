@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #1B263B;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #E0E1DD;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1B263B;
+    border-radius: 10px;
+}
+
+.steps-list h3, .google-doc h3 {
+    color: #A9B4C2;
+}
+
+.steps-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.steps-list li {
+    background-color: #415A77;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #E0E1DD;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #415A77;
+    color: #E0E1DD;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #1F4E78;
+    color: #E0E1DD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #133B5C;
+}
+
+#linkDisplay {
+    margin-top: 15px;
+}
+
+.btn-link {
+    color: #1F7A8C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    color: #00A8E8;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    input, .btn {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,267 @@
+/* Contact Page Styles */
+
+
+/* Reset some default styles */
+
+
+
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav container */
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Optional: Max width for larger screens */
+    width: 100%;
+    padding: 0 1rem; /* Optional: Add some padding */
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-right: auto; /* Push logo to the left */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem; /* Space between nav items */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-left: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    width: 100%;
+    bottom: 0;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links on small screens */
+    }
+
+
+    .nav-toggle {
+        display: block; /* Show the hamburger menu */
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .container-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 1rem 0; /* Vertical spacing between links */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem; /* Smaller heading on extra-small screens */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+
+    .logo{
+        margin-left: 40px;
+    }
+
+    .btn-get-started {
+
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 0.8rem 1.8rem; /* Adjust button size */
+    }
+      .nav-toggle {
+        display: block; /* Show the hamburger menu */
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+        margin-left: 100px;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.contact-form, .contact-details {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.contact-form h2, .contact-details h2 {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 0.75rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+.contact-details p {
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .contact-form, .contact-details {
+        padding: 1rem;
+    }
+}
+
+

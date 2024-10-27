@@ -1,0 +1,168 @@
+/* Dark Theme with Blue Color Scheme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #03a9f4;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #81d4fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1s ease-in;
+}
+
+h1, h2, h3 {
+    color: #03a9f4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    color: #81d4fa;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    background-color: #333;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #03a9f4;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0288d1;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background-color: #333;
+}
+
+button.deleteBtn {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.deleteBtn:hover {
+    background-color: #e04848;
+    transform: scale(1.05);
+}
+
+button.deleteBtn:active {
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    input, select {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

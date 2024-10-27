@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  <style type="text/css">
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.chart{
+    margin-left: 500px;
+    margin-top: 200px;
+    width: 700px;
+    height: 600px;
+}
+
+.sidebar {
+    width: 287px;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.sidebar.collapsed {
+    transform: translateX(-100%);
+}
+
+.sidebar .profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebar .profile-email {
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #ecf0f1;
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+.content.collapsed {
+    margin-left: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-left: 0.1rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: fit-content;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: -9;
+}
+
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .sidebar.collapsed {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-left: 0;
+    }
+    .chart{
+        margin-left: 10px;
+
+        margin-top: 150px;
+    }
+}
+
+
+
+
+
+  </style>
+   
+    
+  </head>
+  <body >
+   <div class="mobile-menu-icon" onclick="toggleSidebar()">
+        &#9776; <!-- Hamburger icon -->
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="profile-section">
+            <img alt="Profile Picture" class="profile-pic">
+            <h3 class="profile-name"></h3>
+            <p class="profile-email"></p>
+        </div>
+        <h2>Budget App</h2>
+        <ul>
+            <li><a href="main.html">Dashboard</a></li>
+            <li><a href="expense.html">Expenses</a></li>
+            <li><a href="income.html">Income</a></li>
+            <li><a href="Saving.html">Savings</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <br><br>
+    </div>
+
+    <div class="chart">
+  <canvas id="myChart" height="200px" width="400px"></canvas>
+</div>
+
+
+
+
+
+
+        <footer>
+        <p>&copy; 2024 Budget App. All rights reserved. Developed By : Daksh Shah</p>
+    </footer>
+     <script src="https:\\unpkg.com\dayjs@1.11.10\dayjs.min.js"></script>
+    <script src="Scripts/details.js"></script>
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/income.js"></script>
+    <script type="expense.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+let recievedRecurring;
+let recievedMonthly;        
+let allMonth = 0;
+let thisMonth = 0;
+        mainloadExpensesFromLocalStorage()
+
+        recievedRecurring.forEach((item)=>{
+            allMonth += Number(item.amount);
+        })
+
+let january = allMonth;
+let february=allMonth;
+let march = allMonth;
+let april = allMonth;
+let may = allMonth;
+let june = allMonth;
+let july = allMonth;
+let august = allMonth;
+let september = allMonth;
+let october = allMonth;
+let november = allMonth;
+let december = allMonth;
+
+const monthName = dayjs().format('MMMM');
+
+console.log(monthName);  // Outputs: October
+
+let januaryRatio = 0;
+let februaryRatio = 0;
+let marchRatio = 0;
+let aprilRatio = 0;
+let mayRatio = 0;
+let juneRatio = 0;
+let julyRatio = 0;
+let augustRatio = 0;
+let septemberRatio = 0;
+let octoberRatio = 0;
+let novemberRatio = 0;
+let decemberRatio = 0;
+
+
+ 
+
+getValue()
+console.log(january)
+  function getValue()  {
+      recievedMonthly.forEach((item)=>{
+            if(item.month == 'January'){
+                january += Number(item.amount);
+                
+            }
+            else if(item.month == 'February'){
+                february += Number(item.amount);
+            }
+            else if(item.month == 'March'){
+                march += Number(item.amount);
+            }
+            else if(item.month == 'April'){
+                april += Number(item.amount);
+            }
+            else if(item.month == 'May'){
+                may += Number(item.amount);
+            }
+            else if(item.month == 'June'){
+                june += Number(item.amount);
+            }
+            else if(item.month == 'July'){
+                july += Number(item.amount);
+            }
+            else if(item.month == 'August'){
+                august += Number(item.amount);
+            }
+            else if(item.month == 'September'){
+                september += Number(item.amount);
+            }
+            else if(item.month == 'October'){
+                october += Number(item.amount);
+            }
+            else if(item.month == 'November'){
+                november += Number(item.amount);
+            }
+            else if(item.month == 'December'){
+                december += Number(item.amount);
+            }
+
+        })
+  }    
+
+        amountRcd = JSON.parse(localStorage.getItem('income'))
+        console.log(amountRcd)
+
+
+ 
+function findRatio(){
+    amountRcd.forEach((recieve)=>{
+        if(recieve.month == 'Jan'){
+            januaryRatio = Math.round((recieve.grandTotal/january)*100)
+            
+        }
+        else if(recieve.month == 'Feb'){
+            februaryRatio = Math.round((recieve.grandTotal/february)*100)
+            
+        }
+else if (recieve.month === 'March') {
+    marchRatio = Math.round((recieve.grandTotal / march) * 100);
+} else if (recieve.month === 'April') {
+    aprilRatio = Math.round((recieve.grandTotal / april) * 100);
+} else if (recieve.month === 'May') {
+    mayRatio = Math.round((recieve.grandTotal / may) * 100);
+} else if (recieve.month === 'June') {
+    juneRatio = Math.round((recieve.grandTotal / june) * 100);
+} else if (recieve.month === 'July') {
+    julyRatio = Math.round((recieve.grandTotal / july) * 100);
+} else if (recieve.month === 'August') {
+    augustRatio = Math.round((recieve.grandTotal / august) * 100);
+} else if (recieve.month === 'September') {
+    septemberRatio = Math.round((recieve.grandTotal / september) * 100);
+} else if (recieve.month === 'October') {
+    octoberRatio = Math.round((recieve.grandTotal / october) * 100);
+} else if (recieve.month === 'November') {
+    novemberRatio = Math.round((recieve.grandTotal / november) * 100);
+} else if (recieve.month === 'December') {
+    decemberRatio = Math.round((recieve.grandTotal / december) * 100);
+}
+    })
+}
+findRatio()
+console.log(januaryRatio , februaryRatio, marchRatio , aprilRatio)
+ function mainloadExpensesFromLocalStorage() {
+    const savedRecurring = localStorage.getItem('recurringExpenses');
+    const savedMonthly = localStorage.getItem('monthlyExpenses');
+
+    if (savedRecurring) {
+        recievedRecurring = JSON.parse(savedRecurring);
+        
+    }
+
+    if (savedMonthly) {
+        recievedMonthly = JSON.parse(savedMonthly);
+        
+    }
+}
+let data = [januaryRatio , februaryRatio,marchRatio,aprilRatio,mayRatio,juneRatio,julyRatio,augustRatio,septemberRatio,octoberRatio,novemberRatio,decemberRatio]
+ const ctx = document.getElementById('myChart');
+
+ new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June','July','August','September','October','November','December'],
+      datasets: [{
+        label: 'income:expense ratio',
+        data: data,
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+/* About Page Styles */
+.about {
+    padding: 2rem 1rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.team {
+    margin-top: 2rem;
+}
+
+.team h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.team-member {
+    background: #e0add3;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.team-member p {
+    margin-bottom: 1rem;
+}
+
+.team-member p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Reset some default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    color: white;
+}
+h1,h2,h3{
+    color: blue;
+}
+
+li:hover{
+   
+   text-decoration: underline;
+}
+
+
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav container */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Optional: Max width for larger screens */
+    width: 100%;
+    padding: 0 1rem; /* Optional: Add some padding */
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-right: auto; /* Push logo to the left */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem; /* Space between nav items */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-left: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    width: 100%;
+    bottom: 0;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links on small screens */
+    }
+
+
+    .nav-toggle {
+        display: block; /* Show the hamburger menu */
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 1rem 0; /* Vertical spacing between links */
+    }
+}
+
+@media (max-width: 480px) {
+ 
+
+    .logo{
+        margin-left: 40px;
+    }
+
+
+      .nav-toggle {
+        display: block; /* Show the hamburger menu */
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+        margin-left: 100px;
+    }
+}

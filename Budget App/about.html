@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Budget Management App</title>
+    <link rel="stylesheet" href="Styles/about.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Budget App</h1>
+                <div class="nav-toggle" id="navToggle">&#9776;</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container-main">
+                <h1>About Us</h1>
+                <p>Welcome to Budget App, your ultimate solution for managing your finances effectively. Our team is dedicated to providing you with the best tools to track your spending, budget wisely, and achieve your financial goals.</p>
+                
+                <div class="team">
+                    <h2>Meet the Team</h2>
+                    <div class="team-member">
+                        <img src="C:\Users\VAISHALI\Downloads\IMG_9113_edited.JPG" alt="Team Member 1">
+                        <h3>Daksh Shah</h3>
+                        <p>Co-founder & CEO</p>
+                        <p>Daksh is passionate about personal finance and has over a decade of experience in the finance industry. He leads our team with a vision to simplify budgeting for everyone.</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Budget App. All rights reserved. Developed By : Daksh Shah</p>
+    </footer>
+    <script>
+        // JavaScript for handling the mobile menu toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

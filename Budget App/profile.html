@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Setup Page</title>
+    <link rel="stylesheet" href="Styles/profile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile Setup</h1>
+        <div class="profile-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="profile-pic">Select Profile - Picture</label>  
+                <input type="file" id="profile-pic" accept="image/*" style="background-color: transparent;display: none; " required name="pro-pic">
+            </div>
+
+                    <button  class="submit-btn" id="submit-btn">Save Profile</button>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Budget App. All rights reserved. Developed By: Daksh Shah</p>
+    </footer>
+    <script src="Scripts/profile.js"></script>
+    <script src="Scripts/details.js"></script>
+</body>
+</html>

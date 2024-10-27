@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" type="text/css" href="Styles/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-main">
+                <h1 class="logo">Budget App</h1>
+
+                <div class="nav-toggle" id="navToggle">&#9776;</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <main>
+        <section class="contact-form">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section class="contact-details">
+            <div class="container">
+                <h2>Contact Details</h2>
+                <p><strong>Phone:</strong> +91 90221 55335</p>
+                <p><strong>Email:</strong> dakshshah8a@gmail.com</p>
+                <p><strong>Address:</strong>Mumbai, Maharashtra</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Budget App. All rights reserved.<br> Developed By: Daksh Shah</p>
+    </footer>
+    <script>
+        // JavaScript for handling the mobile menu toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

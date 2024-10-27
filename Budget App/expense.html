@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="Styles/expense.css">
+</head>
+<body>
+    <!-- Navbar with Home button -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="main.html" >Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="container" id="home">
+        <h1>Expense Tracker</h1>
+
+        <!-- Recurring Expenses Section -->
+        <section class="recurring-expenses">
+            <h2>Recurring Expenses</h2>
+            <form id="recurringForm">
+                <label for="recurringDescription">Field Name</label>
+                <input type="text" id="recurringDescription" placeholder="Expense description">
+
+                <label for="recurringAmount">Amount</label>
+                <input type="number" id="recurringAmount" placeholder="Expense amount">
+
+                <button type="button" id="addRecurring">Add Recurring Expense</button>
+            </form>
+<br>
+            <h3>Recurring Expenses List</h3>
+            <ul id="recurringList">
+                <!-- Recurring expenses will appear here -->
+            </ul>
+        </section>
+
+        <!-- Monthly Expenses Section -->
+        <section class="monthly-expenses">
+            <h2>Monthly Expenses</h2>
+            <form id="monthlyForm">
+                <label for="month">Select Month</label>
+                <select id="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                    <!-- Add more months as needed -->
+                </select>
+
+                <label for="monthlyAmount">Amount</label>
+                <input type="number" id="monthlyAmount" placeholder="Expense amount">
+
+                <button type="button" id="addMonthly">Add Monthly Expense</button>
+            </form>
+<br>
+            <h3>Monthly Expenses List</h3>
+            <ul id="monthlyList">
+                <!-- Monthly expenses will appear here -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="Styles/expense.js"></script>
+</body>
+</html>
